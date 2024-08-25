@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
                 </div>
             )}
 
-<div className="col-span-1 flex items-center text-[1.4em] text-white space-x-10 justify-center">
+<div className={`col-span-1 flex items-center text-[1.4em] text-white space-x-10 justify-center ${isMobile ? 'hidden' : 'block'}`}>
     <nav className="xl:max-2xl:ml-[5%]">
         <ul className="flex xs:max-sm:text-[0.8em] xl:max-2xl:text-[0.8em]">
             {links.map((link, index) => (
