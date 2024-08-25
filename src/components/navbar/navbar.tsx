@@ -17,8 +17,8 @@ import bgmusic3 from "../../assets/music/bgmusic1.mp3";
 import ciscoLogo from "../../assets/images/full_logo.png";
 
 const Navbar: React.FC = () => {
-  const [activeLink, setActiveLink] = useState("home"); // defines the state for the active link
-  const links = ["home", "overview", "theme", "attire", "venue"]; // defines the links
+  const [activeLink, setActiveLink] = useState<LinkName>('home'); // defines the state for the active link
+  const links: LinkName[] = ['home', 'overview', 'theme', 'attire', 'venue']; // defines the links
   const linkIcons = [
     MdHomeFilled,
     GiStarSattelites,
