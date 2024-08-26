@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Navbar from "./components/navbar/navbar";
-import Banner from "./components/banner/banner";
-import PostBanner from "./components/postbanner/postbanner";
+import Navbar from "./components/navbar/Navbar.tsx";
+import Banner from "./components/banner/Banner.tsx";
+import PostBanner from "./components/postbanner/PostBanner.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 import BackgroundImage from "./assets/images/backgroundimage.png";
 
@@ -18,7 +19,11 @@ function App() {
           }}
         >
           <PostBanner />
+          <div id="Content" className="cart text-white">
+            
+          </div>
         </div>
+        <Footer />
       </div>
     </>
   );
