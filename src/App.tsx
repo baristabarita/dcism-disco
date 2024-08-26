@@ -6,8 +6,8 @@ import Overview from "./components/overview/Overview.tsx";
 import Theme from "./components/theme/Theme.tsx";
 import Attire from "./components/attire/Attire.tsx";
 import Venue from "./components/venue/Venue.tsx";
+import Qrsec from "./components/qrsec/Qrsec.tsx";
 import Footer from "./components/footer/Footer.tsx";
-
 import BackgroundImage from "./assets/images/backgroundimage.png";
 
  
@@ -29,6 +29,7 @@ function App() {
             <Theme />
             <Attire />
             <Venue />
+            <Qrsec />
           </div>
         </div>
         <Footer />
