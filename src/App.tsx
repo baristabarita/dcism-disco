@@ -5,6 +5,7 @@ import PostBanner from "./components/postbanner/PostBanner.tsx";
 import Overview from "./components/overview/Overview.tsx";
 import Theme from "./components/theme/Theme.tsx";
 import Attire from "./components/attire/Attire.tsx";
+import Venue from "./components/venue/Venue.tsx";
 import Footer from "./components/footer/Footer.tsx";
 
 import BackgroundImage from "./assets/images/backgroundimage.png";
@@ -27,6 +28,7 @@ function App() {
             <Overview />
             <Theme />
             <Attire />
+            <Venue />
           </div>
         </div>
         <Footer />
