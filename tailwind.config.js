@@ -17,6 +17,12 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'quicksand': ['Quicksand','sans-serif'],
+        'bitter': ['Bitter','sans-serif'],
+        'roboto' : ['Roboto', 'sans-serif'],
+        'bodoni' : ['Bodoni Moda', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -159,6 +165,10 @@ module.exports = {
             opacity: '0',
           },
         },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(2rem)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         'shake': {
           '0%, 100%': {
             transform: 'translateX(0)',
@@ -172,7 +182,6 @@ module.exports = {
         },
       },
       animation: {
-        animation: {
           "accordion-down": "accordion-down 0.2s ease-out",
           "accordion-up": "accordion-up 0.2s ease-out",
           'slide-down': 'slide-down 0.3s ease-out',
@@ -185,9 +194,10 @@ module.exports = {
           'slide-up': 'slide-up 0.3s ease-out',
           'fade-in': 'fade-in 2s ease-in-out',
           'fade-out': 'fade-out 0.5s ease-in-out',
+          'fade-up': 'fade-up 0.5s ease-out',
           'shake': 'shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97)',
-        },
       },
+      
     },
   },
   plugins: [

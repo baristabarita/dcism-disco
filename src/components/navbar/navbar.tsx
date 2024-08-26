@@ -41,41 +41,34 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // get the current scroll position
       const scrollPosition = window.scrollY + 80;
-      // loop through the sections and check which one is in view
-      sections.forEach((section, index) => {
-        if (
-          section &&
-          section.offsetTop !== undefined &&
-          section.offsetTop <= scrollPosition &&
-          section.offsetTop + section.clientHeight > scrollPosition
-        ) {
-          // update the active link state
-          setActiveLink(links[index]);
+
+      links.forEach((link) => {
+        const section = document.getElementById(link);
+        if (section) {
+          const { offsetTop, clientHeight } = section;
+          if (offsetTop <= scrollPosition && offsetTop + clientHeight > scrollPosition) {
+            setActiveLink(link);
+          }
         }
       });
     };
 
-    //for mobile
     const handleResize = () => {
       setIsMobile(window.innerWidth >= 300 && window.innerWidth <= 640);
     };
 
-    // add an event listener for scroll & mobile
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
     handleResize();
 
-    // remove the event listener on cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
-  }, [sections, links]);
+  }, [links]);
 
   const handleEnd = () => {
-    // when one track ends, play the next one
     setCurrentTrack((currentTrack + 1) % musicUrls.length);
   };
 
