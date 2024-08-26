@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.glow {
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.905); /* Silver color */
+}

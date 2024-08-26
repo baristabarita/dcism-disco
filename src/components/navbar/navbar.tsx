@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-black grid grid-cols-3 justify-between items-center h-[4rem] font-bitter">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-gradient-to-r from-transparent to-black grid grid-cols-3 justify-between items-center h-[4rem] font-bitter">
             <div className="col-span-1 flex items-center">
                 {!isMobile && (
                     <img
