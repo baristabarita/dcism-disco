@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer.tsx";
 
 import BackgroundImage from "./assets/images/backgroundimage.png";
 
-import { Button } from "@/components/ui/button"; 
+ 
 function App() {
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
         <div
           style={{
             backgroundImage: `url(${BackgroundImage})`,
+            backgroundRepeat: 'repeat'
           }}
         >
           <PostBanner />
