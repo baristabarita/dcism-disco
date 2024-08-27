@@ -13,7 +13,6 @@ import { TbMusicOff } from "react-icons/tb";
 import { FaLocationDot, FaMusic } from "react-icons/fa6";
 import bgmusic1 from "../../assets/music/bgmusic1.mp3";
 import bgmusic2 from "../../assets/music/bgmusic2.mp3";
-import bgmusic3 from "../../assets/music/bgmusic1.mp3";
 import ciscoLogo from "../../assets/images/full_logo.png";
 
 const Navbar: React.FC = () => {
@@ -28,7 +27,7 @@ const Navbar: React.FC = () => {
   ];
   const [playMusic, setPlayMusic] = useState(true); // defines the state for the music player
   const [currentTrack, setCurrentTrack] = useState(0); // defines the state for the current track
-  const musicUrls: string[] = [bgmusic1, bgmusic2, bgmusic3];
+  const musicUrls: string[] = [bgmusic1, bgmusic2];
 
   //for mobile view
   const [showSidebar, setShowSidebar] = useState(false);
@@ -116,7 +115,7 @@ const Navbar: React.FC = () => {
       >
         <nav className="xl:max-2xl:ml-[5%]">
           <ul className="flex xs:max-sm:text-[0.8em] xl:max-2xl:text-[0.8em]">
-            {links.map((link) => (
+            {links.map((link, _index) => (
               <li
                 key={link}
                 className={`md:mr-4 lg:mr-20 text-center cursor-pointer xs:max-sm:mr-8 xl:max-2xl:mr-16 

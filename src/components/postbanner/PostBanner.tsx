@@ -8,7 +8,7 @@ const PostBanner: React.FC = () => {
             One day you'll leave this world behind so live a life you will remember.
             <br/>
             <br/>
-            These are the nights that never die.
+            These are the nights that never die. - Avicii
             </span>
           </div>
     </div>
