@@ -40,7 +40,7 @@ const Venue: React.FC = () => {
             }`}
           ></div>
           <h1
-            className={`text-2xl sm:text-4xl font-light text-white my-4 mr-4 custom-text-shadow ${
+            className={`text-2xl sm:text-4xl font-light font-bodoni text-white my-4 mr-4 custom-text-shadow ${
               isVisible ? "animate-fade-in delay-4" : ""
             }`}
           >
@@ -48,14 +48,14 @@ const Venue: React.FC = () => {
           </h1>
         </div>
         <h2
-          className={`text-[5em] font-normal font-roboto text-white custom-text-shadow ${
+          className={`text-[5em] font-normal font-bitter text-white custom-text-shadow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
           VENUE
         </h2>
         <p
-          className={`text-white text-right font-roboto font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
+          className={`text-white text-right font-bitter font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >

@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile View Navbar */}
       {showSidebar && isMobile && (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-80 z-50 animate-fade-in">
+        <div className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-80 z-50 animate-slide-right">
           <div className="fixed w-[18rem] h-full right-0 bg-gradient-to-b from-[#72adc9] from-10% via-[#2b3276] via-40% to-black to-90% rounded-tl-xl rounded-bl-xl ">
             <div className="">
               <nav className="flex mt-[3rem]">

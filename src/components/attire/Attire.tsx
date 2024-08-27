@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import attire1 from "../../assets/images/attire/attire1.png";
 import attire2 from "../../assets/images/attire/attire2.jpg";
 import attire3 from "../../assets/images/attire/attire3.png";
-import attire4 from "../../assets/images/attire/attire4.jpg";
+import attire4 from "../../assets/images/attire/attire4.png";
 import attire5 from "../../assets/images/attire/attire5.png";
 import attire6 from "../../assets/images/attire/attire6.jpg";
 
@@ -45,7 +45,7 @@ const Attire: React.FC = () => {
       <div className="my-4">
         <Button
           onClick={() => setGender(gender === "men" ? "women" : "men")}
-          className="bg-[#5e7484] text-white px-4 py-2 rounded-md hover:underline"
+          className="bg-[#5e7484] text-white font-roboto px-4 py-2 rounded-md hover:underline"
         >
           {gender === "men" ? "View Women's Attire" : "View Men's Attire"}
         </Button>
@@ -84,8 +84,7 @@ const Attire: React.FC = () => {
 
       <p className="text-[1em] md:text-[1.2em] lg:text-[1.3em] text-center italic font-bitter text-[#dadada] my-4 mx-20 glow">
         Shine your divine radiance in a dazzling outfit that reflects your
-        personality and style. The dress code for the party is semi-formal (or
-        just wear smthn nice idk), with a touch of blueish gray to silver. Be
+        personality and style. The dress code for the party is casual to semi-formal, with a touch of blueish gray to silver. Be
         creative and have fun with your look, but remember to keep it classy and
         comfortable.
       </p>
