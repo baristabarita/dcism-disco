@@ -20,7 +20,7 @@ function App() {
         <div
           style={{
             backgroundImage: `url(${BackgroundImage})`,
-            backgroundRepeat: 'repeat'
+            backgroundSize: 'contain'
           }}
         >
           <PostBanner />
