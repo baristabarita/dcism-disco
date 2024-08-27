@@ -1,0 +1,1 @@
+export type LinkName = 'home' | 'overview' | 'theme' | 'attire' | 'venue';
