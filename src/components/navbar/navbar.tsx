@@ -13,7 +13,6 @@ import { TbMusicOff } from "react-icons/tb";
 import { FaLocationDot, FaMusic } from "react-icons/fa6";
 import bgmusic1 from "../../assets/music/bgmusic1.mp3";
 import bgmusic2 from "../../assets/music/bgmusic2.mp3";
-import bgmusic3 from "../../assets/music/bgmusic1.mp3";
 import ciscoLogo from "../../assets/images/full_logo.png";
 
 const Navbar: React.FC = () => {
@@ -28,7 +27,7 @@ const Navbar: React.FC = () => {
   ];
   const [playMusic, setPlayMusic] = useState(true); // defines the state for the music player
   const [currentTrack, setCurrentTrack] = useState(0); // defines the state for the current track
-  const musicUrls: string[] = [bgmusic1, bgmusic2, bgmusic3];
+  const musicUrls: string[] = [bgmusic1, bgmusic2];
 
   //for mobile view
   const [showSidebar, setShowSidebar] = useState(false);
