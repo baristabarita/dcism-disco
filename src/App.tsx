@@ -1,4 +1,3 @@
-
 import Navbar from "./components/navbar/Navbar.tsx";
 import Banner from "./components/banner/Banner.tsx";
 import PostBanner from "./components/postbanner/PostBanner.tsx";
