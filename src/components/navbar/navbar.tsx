@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
       >
         <nav className="xl:max-2xl:ml-[5%]">
           <ul className="flex xs:max-sm:text-[0.8em] xl:max-2xl:text-[0.8em]">
-            {links.map((link) => (
+            {links.map((link, _index) => (
               <li
                 key={link}
                 className={`md:mr-4 lg:mr-20 text-center cursor-pointer xs:max-sm:mr-8 xl:max-2xl:mr-16 
