@@ -12,7 +12,7 @@ import { GiStarSattelites, GiQueenCrown, GiPolarStar } from "react-icons/gi";
 import { TbMusicOff } from "react-icons/tb";
 import { FaLocationDot, FaMusic } from "react-icons/fa6";
 import bgmusic1 from "../../assets/music/bgmusic1.mp3";
-import bgmusic2 from "../../assets/music/bgmusic1.mp3";
+import bgmusic2 from "../../assets/music/bgmusic2.mp3";
 import bgmusic3 from "../../assets/music/bgmusic1.mp3";
 import ciscoLogo from "../../assets/images/full_logo.png";
 
