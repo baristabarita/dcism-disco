@@ -49,7 +49,7 @@ const Theme: React.FC = () => {
             }`}
           ></div>
           <h1
-            className={`text-1.5xl sm:text-1xl font-light text-white text-right my-4 mr-4 glow ${
+            className={`text-1.5xl sm:text-1xl font-light font-bodoni text-white text-right my-4 mr-4 glow ${
               isVisible ? "animate-fade-in delay-4" : ""
             }`}
           >
@@ -58,7 +58,7 @@ const Theme: React.FC = () => {
         </div>
 
         <h2
-          className={`text-[5em] font-normal font-roboto text-white text-right glow ${
+          className={`text-[5em] font-normal font-bitter text-white text-right glow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
@@ -66,7 +66,7 @@ const Theme: React.FC = () => {
         </h2>
 
         <p
-          className={`text-white text-right font-roboto font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
+          className={`text-white text-right font-bitter font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >

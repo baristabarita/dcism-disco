@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="flex flex-row justify-between items-center text-sm drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] p-5 bg-black">
       <img src={logo} alt="Cisco Logo" className="h-8" />
       <p className="m-auto text-center text-gray-500">
-      Made with ♡ by{" "}
+        Made with ♡ by{" "}
         <a
           href="https://github.com/baristabarita"
           target="_blank"

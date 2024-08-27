@@ -21,7 +21,7 @@ const Overview: React.FC = () => {
 
   return (
     <section
-          id="overview"
+      id="overview"
       className={`relative h-screen flex items-center ${
         isVisible ? "animate-fade-up" : ""
       }`}
@@ -40,7 +40,7 @@ const Overview: React.FC = () => {
             }`}
           ></div>
           <h1
-            className={`text-2xl sm:text-4xl font-light text-white my-4 ml-4 custom-text-shadow ${
+            className={`text-2xl sm:text-4xl font-light font-bodoni text-white my-4 ml-4 custom-text-shadow ${
               isVisible ? "animate-fade-in delay-4" : ""
             }`}
           >
@@ -48,18 +48,24 @@ const Overview: React.FC = () => {
           </h1>
         </div>
         <h2
-          className={`text-[5em] font-normal font-roboto text-white custom-text-shadow ${
+          className={`text-[5em] font-normal font-bitter text-white custom-text-shadow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
           OVERVIEW
         </h2>
         <p
-          className={`text-white font-roboto font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
+          className={`text-white font-bitter font-medium max-w-screen-sm mt-2 sm:mt-4 custom-text-shadow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
-          The DCISM DISCO, also known as the DCISM Acquaintance Party 2024, is the most anticipated and glamorous event of the school year, organized by the Computer and Information Sciences Council (CISCO) and the Mathematics Society. It's a perfect opportunity for DCISM students and faculty from all levels and backgrounds to connect and socialize. The evening promises an array of surprises that will make it a night to remember for everyone involved.
+          The DCISM DISCO, also known as the DCISM Acquaintance Party 2024, is
+          the most anticipated and glamorous event of the school year, organized
+          by the Computer and Information Sciences Council (CISCO) and the
+          Mathematics Society. It's a perfect opportunity for DCISM students and
+          faculty from all levels and backgrounds to connect and socialize. The
+          evening promises an array of surprises that will make it a night to
+          remember for everyone involved.
         </p>
       </div>
     </section>

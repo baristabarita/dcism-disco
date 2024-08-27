@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
                         ${
                           activeLink === link
                             ? "text-white font-bold relative group bg-[#5e7484] px-5 py-3"
-                            : "relative group py-3 hover:px-5"
+                            : "relative group py-3 "
                         }`}
               >
                 <Link to={link} smooth={true} offset={-80}>
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
                   )}
                 </Link>
                 {activeLink !== link && (
-                  <div className="absolute w-full h-1 bg-white top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                  <div className="absolute w-full h-1 bg-white top-0 left-0 opacity-0 transition-opacity duration-3000 delay-250 ease-in group-hover:opacity-100"></div>
                 )}
               </li>
             ))}
