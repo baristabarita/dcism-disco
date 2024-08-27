@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import Navbar from "./components/navbar/Navbar.tsx";
 import Banner from "./components/banner/Banner.tsx";
 import PostBanner from "./components/postbanner/PostBanner.tsx";
@@ -24,7 +24,7 @@ function App() {
           }}
         >
           <PostBanner />
-          <div className="cart text-white">
+          <div className="card text-white">
             <Overview />
             <Theme />
             <Attire />
