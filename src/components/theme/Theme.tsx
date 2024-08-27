@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import image from "../../assets/images/theme_image.png";
 
 const Theme: React.FC = () => {
