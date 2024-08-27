@@ -4,7 +4,7 @@ import qrimg from "../../assets/images/qrcode.png";
 
 const Qrsec: React.FC = () => {
   return (
-    <section id="qrscan" className="items-center mt-5">
+    <section id="qrscan" className="items-center mt-5 py-4">
       <h1 className="text-[1em] md:text-[1.2em] lg:text-[1.3em] text-center italic font-bitter text-[#dadada] glow px-10 md:px-20">
         Delve into an enchanting night of radiance and wonder as we await the
         biggest & most-anticipated DCISM event this semester - with the theme,

@@ -5,7 +5,7 @@ const Overview: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    const overviewElement = document.getElementById("overview-section");
+    const overviewElement = document.getElementById("overview");
     if (overviewElement) {
       const rect = overviewElement.getBoundingClientRect();
       setIsVisible(rect.top < window.innerHeight && rect.bottom >= 0);

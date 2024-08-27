@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
                     key={link}
                     className={`mr-28 text-center cursor-pointer xs:max-sm:mr-8 xl:max-2xl:mr-16 
                         ${activeLink === link ? 
-                            'text-white font-bold relative group bg-[#9a42ac] px-5 py-3' : 
+                            'text-white font-bold relative group bg-[#5e7484] px-5 py-3' : 
                             'relative group py-3 hover:px-5'
                         }`}
                 >
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
                             </button>
                             <button
                                 onClick={() => (window.location.href = 'https://bit.ly/DCISMLuminaDivina')}
-                                className="pl-5 pr-9 py-5 bg-white hover:bg-[#9a42ac] text-black font-bold rounded-bl-xl hover:text-[#e2e2e2] transition-colors delay-250 duration-3000 ease-in"
+                                className="pl-5 pr-9 py-5 bg-white hover:bg-[#5e7484] text-black font-bold rounded-bl-xl hover:text-[#e2e2e2] transition-colors delay-250 duration-3000 ease-in"
                             >
                                 Register Now
                             </button>
