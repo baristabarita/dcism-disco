@@ -37,7 +37,7 @@ const Attire: React.FC = () => {
         isVisible ? "animate-fade-up" : ""
       }`}
     >
-      <h1 className="text-[7vh] md:text-[10vh] text-center font-light font-bitter text-[#dadada] glow">
+      <h1 className="text-[7vh] md:text-[10vh] text-center font-light font-bodoni text-[#dadada] glow">
         Outfit and Attire
       </h1>
 
