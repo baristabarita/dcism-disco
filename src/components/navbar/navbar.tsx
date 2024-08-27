@@ -26,7 +26,6 @@ const Navbar: React.FC = () => {
     GiQueenCrown,
     FaLocationDot,
   ];
-  const sections = links.map((link) => document.getElementById(link)); // get the sections by id
   const [playMusic, setPlayMusic] = useState(true); // defines the state for the music player
   const [currentTrack, setCurrentTrack] = useState(0); // defines the state for the current track
   const musicUrls: string[] = [bgmusic1, bgmusic2, bgmusic3];
@@ -35,7 +34,7 @@ const Navbar: React.FC = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const navigateTo = (id: string): void => {
+  const navigateTo = (_id: string): void => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -117,7 +116,7 @@ const Navbar: React.FC = () => {
       >
         <nav className="xl:max-2xl:ml-[5%]">
           <ul className="flex xs:max-sm:text-[0.8em] xl:max-2xl:text-[0.8em]">
-            {links.map((link, index) => (
+            {links.map((link) => (
               <li
                 key={link}
                 className={`md:mr-4 lg:mr-20 text-center cursor-pointer xs:max-sm:mr-8 xl:max-2xl:mr-16 
