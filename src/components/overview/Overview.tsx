@@ -59,7 +59,7 @@ const Overview: React.FC = () => {
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
-          The DCISM DISCO, also known as the DCISM Acquaintance Party 2024, is
+          The CISCO DISCO, also known as the DCISM Acquaintance Party 2024, is
           the most anticipated and glamorous event of the school year, organized
           by the Computer and Information Sciences Council (CISCO) and the
           Mathematics Society. It's a perfect opportunity for DCISM students and
