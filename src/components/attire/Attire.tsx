@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 import attire1 from "../../assets/images/attire/attire1.png";
 import attire2 from "../../assets/images/attire/attire2.jpg";
-import attire3 from "../../assets/images/attire/attire3.png";
-import attire4 from "../../assets/images/attire/attire4.png";
+import attire3 from "../../assets/images/attire/attire3.jpg";
+import attire4 from "../../assets/images/attire/attire4.jpg";
 import attire5 from "../../assets/images/attire/attire5.png";
 import attire6 from "../../assets/images/attire/attire6.jpg";
 
