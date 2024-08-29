@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
               </button>
               <button
                 onClick={() =>
-                  (window.location.href = "https://bit.ly/DCISMLuminaDivina")
+                  (window.location.href = "https://forms.gle/xXrfDN3MmQYduGGQA")
                 }
                 className="pl-3 pr-9 py-5 bg-white hover:bg-[#5e7484] text-black font-bold rounded-bl-xl hover:text-[#e2e2e2] transition-colors delay-250 duration-3000 ease-in"
               >
