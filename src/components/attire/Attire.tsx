@@ -14,6 +14,7 @@ const Attire: React.FC = () => {
   const menAttires = [attire2, attire4, attire6];
   const womenAttires = [attire1, attire3, attire5];
   const [isVisible, setIsVisible] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleScroll = () => {
     const overviewElement = document.getElementById("attire");
@@ -30,6 +31,14 @@ const Attire: React.FC = () => {
     };
   }, []);
 
+  const handleGenderToggle = () => {
+    setLoading(true);
+    setTimeout(()=>{
+      setGender((prevGender) => (prevGender === "men" ? "women" : "men"));
+      setLoading(false);
+    }, 3000);
+  }
+
   return (
     <section
       id="attire"
@@ -44,7 +53,7 @@ const Attire: React.FC = () => {
       {/* Gender toggle button */}
       <div className="my-4">
         <Button
-          onClick={() => setGender(gender === "men" ? "women" : "men")}
+          onClick={handleGenderToggle}
           className="bg-[#5e7484] text-white font-roboto px-4 py-2 rounded-md hover:underline"
         >
           {gender === "men" ? "View Women's Attire" : "View Men's Attire"}
@@ -53,50 +62,62 @@ const Attire: React.FC = () => {
 
       {/* Display attires based on selected gender */}
       <div className="flex flex-wrap justify-center">
-        {gender === "men"
-          ? menAttires.map((attire, index) => (
-              <div key={index} className="py-1 px-3">
-                <Card>
-                  <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
-                    <img
-                      src={attire}
-                      alt={`Men's Attire ${index + 1}`}
-                      className="object-cover w-full h-full"
-                    />
-                  </CardContent>
-                </Card>
-              </div>
-            ))
-          : womenAttires.map((attire, index) => (
-              <div key={index} className="py-1 px-3">
-                <Card>
-                  <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
-                    <img
-                      src={attire}
-                      alt={`Women's Attire ${index + 1}`}
-                      className="object-cover w-full h-full"
-                    />
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
+        {loading ? (
+          <div className="flex items-center justify-center w-full h-64 py-4">
+            <Card className="animate-pulse">
+              <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
+                <p className="text-white">Loading...</p>
+              </CardContent>
+            </Card>
+          </div>
+        ) : gender === "men" ? (
+          menAttires.map((attire, index) => (
+            <div key={index} className="py-1 px-3">
+              <Card>
+                <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
+                  <img
+                    src={attire}
+                    alt={`Men's Attire ${index + 1}`}
+                    className="object-cover w-full h-full"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          ))
+        ) : (
+          womenAttires.map((attire, index) => (
+            <div key={index} className="py-1 px-3">
+              <Card>
+                <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
+                  <img
+                    src={attire}
+                    alt={`Women's Attire ${index + 1}`}
+                    className="object-cover w-full h-full"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          ))
+        )}
       </div>
 
       <p className="text-[1em] md:text-[1.2em] lg:text-[1.3em] text-center italic font-bitter text-[#dadada] my-4 mx-20 glow">
         Shine your divine radiance in a dazzling outfit that reflects your
-        personality and style. The dress code for the party is casual to semi-formal, with a touch of blueish gray to silver. Be
-        creative and have fun with your look, but remember to keep it classy and
-        comfortable.
+        personality and style. The dress code for the party is appropriate
+        sleeping attire, such as silk or patterned pajamas and onesies, with a
+        touch of bluish-gray to silver. Be creative and have fun with your look,
+        but remember to keep it classy and comfy.
       </p>
 
       <h1 className="font-bold text-[2em] text-[#dadada] font-bitter glow my-4">
         🪩 IMPORTANT NOTE 🪩
       </h1>
       <p className="text-center text-[#dadada] font-bitter mb-4 mx-20">
-        Attendees are not obligated to strictly follow outfit guidelines, but
-        are simply encouraged to express their creativity through their outfits
-        as long as it is not harmful, insensitive, or disrespectful to any
-        person or community.
+        Attendees are required to follow the outfit guidelines, but we encourage
+        you to get creative and have fun with your look! Just keep it respectful
+        and considerate of everyone—remember,
+        <br />
+        <strong className="text-[1.3em] font-bitter italic glow">No pajamas, No entry!</strong>
       </p>
     </section>
   );
