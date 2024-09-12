@@ -49,23 +49,12 @@ const Attire: React.FC = () => {
       <h1 className="text-[7vh] md:text-[10vh] text-center font-light font-bodoni text-[#dadada] glow">
         Outfit and Attire
       </h1>
-
-      {/* Gender toggle button */}
-      <div className="my-4">
-        <Button
-          onClick={handleGenderToggle}
-          className="bg-[#5e7484] text-white font-roboto px-4 py-2 rounded-md hover:underline"
-        >
-          {gender === "men" ? "View Women's Attire" : "View Men's Attire"}
-        </Button>
-      </div>
-
       {/* Display attires based on selected gender */}
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center relative">
         {loading ? (
-          <div className="flex items-center justify-center w-full h-64 py-4">
+          <div className="py-1 px-3">
             <Card className="animate-pulse">
-              <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em]">
+              <CardContent className="bg-black flex items-center justify-center p-4 aspect-auto rounded-lg w-[13em] h-[24em] py-10">
                 <p className="text-white">Loading...</p>
               </CardContent>
             </Card>
@@ -100,6 +89,17 @@ const Attire: React.FC = () => {
           ))
         )}
       </div>
+      
+       {/* Gender toggle button */}
+       <div className="my-4">
+        <Button
+          onClick={handleGenderToggle}
+          className="bg-[#5e7484] text-white font-roboto px-4 py-2 rounded-md hover:underline"
+        >
+          {gender === "men" ? "View Women's Attire" : "View Men's Attire"}
+        </Button>
+      </div>
+
 
       <p className="text-[1em] md:text-[1.2em] lg:text-[1.3em] text-center italic font-bitter text-[#dadada] my-4 mx-20 glow">
         Shine your divine radiance in a dazzling outfit that reflects your
