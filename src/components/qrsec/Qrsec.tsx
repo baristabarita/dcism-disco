@@ -1,6 +1,6 @@
 import React from "react";
 
-import qrimg from "../../assets/images/qrcode.png";
+import qrimg from "../../assets/images/qrcode.jpg";
 
 const Qrsec: React.FC = () => {
   return (
