@@ -57,7 +57,7 @@ const Theme: React.FC = () => {
         </div>
 
         <h2
-          className={`text-[5em] font-normal font-bodoni text-white text-right glow ${
+          className={`text-5xl md:text-6xl font-normal font-bodoni text-white text-right glow ${
             isVisible ? "animate-fade-up delay-75" : ""
           }`}
         >
